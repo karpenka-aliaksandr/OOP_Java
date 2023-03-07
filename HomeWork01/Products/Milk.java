@@ -20,5 +20,4 @@ public class Milk extends Drink {
         sb.append(String.format("Expiration date: %s  ", this.expirationDate));
         return sb.toString();
     }
-
 }
