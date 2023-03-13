@@ -30,8 +30,8 @@ public class Zoo {
         return new StringBuilder (zoo.get(index).getInfo());
     }
 
-    public void makeSound(int index){
-        zoo.get(index).makeSound();
+    public String makeSound(int index){
+        return zoo.get(index).makeSound();
     }
 
     public StringBuilder printInfoAll(){
@@ -42,12 +42,18 @@ public class Zoo {
         return sb;
     }
 
-    public void makeSoundAll(){
+    public String makeSoundAll(){
+        StringBuilder sb = new StringBuilder();
         for (int index = 0; index < this.zoo.size(); index++) {
-            makeSound(index);
+            sb.append(makeSound(index)+"\n");
         }
+        return sb.toString();
     }
 
+    public boolean isEmpty(){
+        return this.zoo.isEmpty();
+    }
+ 
     public void addPropertyChangeListener(PropertyChangeListener pcl) {
         support.addPropertyChangeListener(pcl);
     }
@@ -60,5 +66,9 @@ public class Zoo {
         support.firePropertyChange("Zoo", this.notyfy, value);
         this.notyfy = value;
     }
+    public int getCount(){
+        return zoo.size();
+    }
+
 
 }

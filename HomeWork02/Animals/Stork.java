@@ -20,8 +20,9 @@ public class Stork extends Bird{
         return getInfo();
     }
 
-    public void makeSound() {
-        System.out.println("Чи-лин!(аист) ");
+    public String makeSound() {
+        String sound = "Чи-лин!(аист) ";
+        return sound; 
     }
     
 }

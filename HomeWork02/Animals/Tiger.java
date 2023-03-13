@@ -22,9 +22,9 @@ public class Tiger extends WildAnimal{
         return getInfo();
     }
 
-    public void makeSound() {
-        System.out.println("Тигр-Р-Р-Р! ");
+    public String makeSound() {
+        String sound = "Тигр-Р-Р-Р! ";
+        return sound; 
     }
-
-      
+ 
 }

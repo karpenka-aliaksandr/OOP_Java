@@ -5,7 +5,7 @@ public abstract class Animal {
     protected Double weight;
     protected String eyeColor;
 
-    public abstract void makeSound();
+    public abstract String makeSound();
 
     public Animal(int height, Double weight, String eyeColor) {
         this.height = height;

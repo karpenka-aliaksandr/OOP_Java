@@ -1,5 +1,7 @@
 package HomeWork02.Animals;
 
+import java.time.LocalDate;
+
 import HomeWork02.Animals.Groups.Pet;
 
 public class Dog extends Pet{
@@ -7,21 +9,23 @@ public class Dog extends Pet{
     
 
     public Dog(int height, Double weight, String eyeColor, String nickname, String breed, boolean hasVaccinations,
-            String coatColor, boolean hasTraining) {
-        super(height, weight, eyeColor, nickname, breed, hasVaccinations, coatColor);
+            String coatColor,LocalDate dateOfBirth ,  boolean hasTraining) {
+        super(height, weight, eyeColor, nickname, breed, hasVaccinations, coatColor, dateOfBirth);
         this.hasTraining = hasTraining;
     }
 
     public String getInfo() {
         StringBuilder sb = new StringBuilder();
         sb.append(String.format("Class %s, ", this.getClass().getSimpleName()));
-        sb.append(String.format("hasTraining %s, ", this.hasTraining ? "Yes" : "No"));
         sb.append(super.getInfo());
+        sb.append(String.format("hasTraining %s, ", this.hasTraining ? "Yes" : "No"));
         return sb.toString();
     }
 
-    public void makeSound() {
-        System.out.println("Гав! ");      
+    public String makeSound() {
+        
+        String sound = "Гав! ";
+        return sound;     
     }
 
     @Override

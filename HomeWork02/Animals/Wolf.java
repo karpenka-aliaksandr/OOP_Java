@@ -17,8 +17,8 @@ public class Wolf extends WildAnimal {
     public String getInfo() {
         StringBuilder sb = new StringBuilder();
         sb.append(String.format("Class %s, ", this.getClass().getSimpleName()));
-        sb.append(String.format("leaderOfPack %s, ", this.leaderOfPack ? "Yes" : "No"));
         sb.append(super.getInfo());
+        sb.append(String.format("leaderOfPack %s, ", this.leaderOfPack ? "Yes" : "No"));
         return sb.toString();
     }
 
@@ -27,11 +27,11 @@ public class Wolf extends WildAnimal {
         return getInfo();
     }
 
-    @Override
-    public void makeSound() {
-        System.out.println("А-у-у-у-у-у!");
+    public String makeSound() {
+        String sound = "А-у-у-у-у-у!";
+        return sound; 
     }
-    
+        
     public boolean isLeaderOfPack() {
         return leaderOfPack;
     }

@@ -20,8 +20,9 @@ public class Chicken extends Bird{
         return getInfo();
     }
 
-    public void makeSound() {
-        System.out.println("Ко-ко-ко! ");
+    public String makeSound() {
+        String sound = "Ко-ко-ко! ";
+        return sound;  
     }
     
 }

@@ -16,9 +16,9 @@ public abstract class WildAnimal extends Animal{
 
     public String getInfo() {
         StringBuilder sb = new StringBuilder();
+        sb.append(super.getInfo());
         sb.append(String.format("habitat %s, ", this.habitat));
         sb.append(String.format("dateOfFound %s, ", this.dateOfFound));
-        sb.append(super.getInfo());
         return sb.toString();
     }
 
