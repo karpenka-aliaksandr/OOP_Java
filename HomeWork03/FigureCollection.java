@@ -52,8 +52,7 @@ public class FigureCollection{
 
     public String getInfo(int index){
         StringBuilder sb = new StringBuilder();
-            sb.append(getInfoFigure(figures.get(index)));
-        }
+        sb.append(getInfoFigure(figures.get(index)));
         return sb.toString();
     }
     public String getAllInfo(){
