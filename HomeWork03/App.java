@@ -12,6 +12,8 @@ public class App{
         System.out.println(figures.getAllInfo());
         figures.sort();
         System.out.println(figures.getAllInfo());
-        System.out.println(figures.getInfo());
+        System.out.println(figures.getInfo(1));
+        figures.remove(1);
+        System.out.println(figures.getAllInfo());
     }
 }
