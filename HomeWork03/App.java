@@ -7,9 +7,11 @@ public class App{
         FigureCollection figures = new FigureCollection();
         figures.add(new Circle(3));
         figures.add(new Triangle(3,4,6));
-        figures.add(new Triangle(3,4,7));
+        figures.add(new Triangle(3,5,7));
+
         System.out.println(figures.getAllInfo());
         figures.sort();
         System.out.println(figures.getAllInfo());
+        System.out.println(figures.getInfo());
     }
 }

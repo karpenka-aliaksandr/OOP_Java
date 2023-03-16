@@ -34,9 +34,9 @@ public class FigureCollection{
     public void sort(){
         Collections.sort(figures);
     }
-    public String getInfo(Figure figure){
+    public String getInfoFigure(Figure figure){
         StringBuilder sb = new StringBuilder();
-        sb.append(figure.getClass().getSimpleName()+" _ ");
+        sb.append(figure + " | ");
         sb.append(String.format("Area: %f  ", figure.area()));
         if(figure instanceof Perimeterable){
             Perimeterable perimeterable = (Perimeterable)figure;
@@ -49,10 +49,17 @@ public class FigureCollection{
         sb.append("\n");
         return sb.toString();
     }
+
+    public String getInfo(int index){
+        StringBuilder sb = new StringBuilder();
+            sb.append(getInfoFigure(figures.get(index)));
+        }
+        return sb.toString();
+    }
     public String getAllInfo(){
         StringBuilder sb = new StringBuilder();
         for (Figure figure : figures) {
-            sb.append(getInfo(figure));
+            sb.append(getInfoFigure(figure));
         }
         return sb.toString();
     }
