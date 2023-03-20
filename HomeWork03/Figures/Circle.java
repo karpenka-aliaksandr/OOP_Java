@@ -23,4 +23,17 @@ public class Circle extends Figure implements Lengthable{
     public String toString() {
         return String.format("Круг R=%d", this.radius);
     }
+
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (obj == null || obj.getClass() != this.getClass()) {
+            return false;
+        }
+
+        Circle guest = (Circle) obj;
+        return this.radius == guest.radius;
+    }
+
 }
