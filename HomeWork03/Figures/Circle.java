@@ -21,6 +21,6 @@ public class Circle extends Figure implements Lengthable{
     }
     @Override
     public String toString() {
-        return String.format("Круг");
+        return String.format("Круг R=%d", this.radius);
     }
 }

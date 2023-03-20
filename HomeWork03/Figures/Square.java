@@ -10,6 +10,6 @@ public class Square extends Rectangle{
     }
     @Override
     public String toString(){
-        return "Квадрат";
+        return String.format("Квадрат a = %d",this.sides[0]);
     }
 }

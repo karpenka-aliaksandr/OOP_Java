@@ -17,6 +17,6 @@ public class Rectangle extends Polygon{
     }
     @Override
     public String toString() {
-        return String.format("Прямоугольник");
+        return String.format("Прямоугольник a x b = %d x %d",this.sides[0],this.sides[1]);
     }
 }

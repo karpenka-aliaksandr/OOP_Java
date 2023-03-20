@@ -18,6 +18,6 @@ public class Triangle extends Polygon{
     }
     @Override
     public String toString() {
-        return "Треугольник";
+        return String.format("Треугольник a, b, c = %d, %d, %d",this.sides[0],this.sides[1],this.sides[2]);
     }
 }
