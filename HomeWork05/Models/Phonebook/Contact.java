@@ -1,9 +1,10 @@
+package Models.Phonebook;
 public class Contact {
-    public String lastname;
-    public String firstname;
-    public String middlename;
-    public String telnumber;
-    public String emailaddr;
+    private String lastname;
+    private String firstname;
+    private String middlename;
+    private String telnumber;
+    private String emailaddr;
 
     public Contact(String lastname, String firstname, String middlename, String telnumber, String emailaddr) {
         this.lastname = lastname;
@@ -65,8 +66,8 @@ public class Contact {
     @Override
     public String toString() {
         return
-                lastname + " " + firstname + " " + middlename + " -- " + telnumber +
-                        " --  " + emailaddr;
+                lastname + " " + firstname + " " + middlename + " Tel.:" + telnumber +
+                        " e-mail:" + emailaddr;
 
     }
 }

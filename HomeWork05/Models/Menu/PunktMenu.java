@@ -1,3 +1,6 @@
+package Models.Menu;
+import Commands.Base.Command;
+
 public class PunktMenu {
     private String text;
     private Command command;
@@ -11,6 +14,9 @@ public class PunktMenu {
     }
     public void run(){
         this.command.execute();
+    }
+    public Command getCommand(){
+        return this.command;
     }
     
 }
